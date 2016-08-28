@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+}
+.angular-google-map-container { 
+    height: 600px; 
+    margin: 2px;
+}
+.navbar{
+    margin-bottom: 0px;
+}
+
+a:hover{
+    cursor: pointer; 
+}
+
+#cruz{
+    color: red;
+    margin-right: 5px;
+}

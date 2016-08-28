@@ -1,0 +1,26 @@
+<!-- Default home page -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand active" href="#/"><span id="cruz" class="glyphicon glyphicon-plus"></span>HelpTrack</a>
+    </div>
+  </div>
+</nav>
+<div class="col-md-4"></div>
+<div class="container-fluid col-md-8">
+  <form role="form">
+    <div class="form-group">
+      <label>Email:<input type="text" class="form-control" ng-model="user.email" required></label>
+    </div>
+    <div class="form-group">
+      <label>Contraseña:<input type="text" class="form-control" ng-model="user.pass" required></label>
+    </div>
+    <div class="form-group">
+      <a href="#/admin" class="btn btn-primary" ng-click="ingresar(user)">Iniciar Sesion</a>
+      <!-- <input href="#/admin" type="submit" value="Iniciar Sesion" class="btn btn-primary" ng-click="ingresar(user)"> -->
+    </div>
+    <div class="form-group">
+      <span>Si no tiene una cuenta haga click en: <a href="#registrar">Registrarse</a></span>
+    </div>
+  </form>
+</div>

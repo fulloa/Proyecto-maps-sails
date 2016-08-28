@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			    </button>
+				<a class="navbar-brand active" href="#/"><span id="cruz" class="glyphicon glyphicon-plus"></span>HelpTrack</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+			      <li class="active"><a href="#/">User</a></li>
+			      <li class="dropdown">
+			        	<a class="dropdown-toggle" data-toggle="dropdown" href="#/">Gestionar
+			        	<span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#/">Page 1-1</a></li>
+			          <li><a href="#/">Page 1-2</a></li>
+			          <li><a href="#/">Page 1-3</a></li> 
+			        </ul>
+			     </ul>
+			     <ul class="nav navbar-nav navbar-right">
+			        <li ng-controller="cerrarSesionController"><a ng-click="openModal('sm')"><span class="glyphicon glyphicon-log-out"></span> Login out</a></li>
+      			</ul>
+			</div>
+		</div>
+</nav>
+	<div class="angular-google-map-container">
+	<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+		<ui-gmap-marker  coords='marker.coords' events='marker.events' idkey="marker.id" options="marker.options"></ui-gmap-marker>
+	</ui-gmap-google-map>
+</div>
