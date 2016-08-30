@@ -65,15 +65,15 @@ module.exports.connections = {
   //   database: 'your_mongo_db_name_here' //optional
   // },
 
-  mongo: {
-    adapter: 'sails-mongo',
-    //uri: 'mongodb://fulloa:pipe1992@:11422/primerav1',
-    host: 'ds017896.mlab.com',
-    port: 17896,
-    dbuser: 'juan',
-    dbpassword: 'jacs123',
-    database: 'mongo-maps'
-  },
+  // mongo: {
+  //   adapter: 'sails-mongo',
+  //   //uri: 'mongodb://fulloa:pipe1992@:11422/primerav1',
+  //   host: 'ds017896.mlab.com',
+  //   port: 17896,
+  //   dbuser: 'felipe',
+  //   dbpassword: 'felipe123',
+  //   database: 'mongo-maps'
+  // },
 
 
   /***************************************************************************

@@ -1,16 +1,21 @@
-app.controller('registrarController', function($scope) {
-   $scope.newUser = {
-		nombre:"",
-		apellido:"",
-		email:"",
-		pass:""
-	};
-
-   $scope.users = [];
+app.controller('registrarController', function($scope,$http) {
+   $scope.newUser = {};
 
 	$scope.addNewUser = function (user) {
-		 console.log(user);
-		 $scope.users.push(angular.extend({},user));	
+
+		 $http.post('/registrar',{
+		 	name: $scope.newUser.name,
+		 	lastName: $scope.newUser.lastName,
+		 	email: $scope.newUser.email,
+		 	pass: $scope.newUser.pass
+		 }).then(function onSuccess(){
+		 		console.log('success')
+		 		windows.location='/user';
+		 }).catch(function onError (sailsResponse){
+		 		console.log(sailsResponse);
+		 }).finally(function anyWay(){
+		 		console.log('Intente Registrar')
+		 });
 	}
 
 	$scope.cancel = function (){

@@ -16,11 +16,19 @@
       <label>Contraseña:<input type="text" class="form-control" ng-model="user.pass" required></label>
     </div>
     <div class="form-group">
-      <a href="#/admin" class="btn btn-primary" ng-click="ingresar(user)">Iniciar Sesion</a>
-      <!-- <input href="#/admin" type="submit" value="Iniciar Sesion" class="btn btn-primary" ng-click="ingresar(user)"> -->
+      <input type="submit" class="btn btn-primary" ng-click="ingresar(user)" value="Iniciar Sesion" >
+      <!-- <a class="btn btn-primary" ng-click="ingresar(user)">Iniciar Sesion</a> -->
     </div>
     <div class="form-group">
       <span>Si no tiene una cuenta haga click en: <a href="#registrar">Registrarse</a></span>
     </div>
   </form>
 </div>
+
+<script src="/js/controller/app.js"></script>
+<script src="/js/controller/adminController.js"></script>
+<script src="/js/controller/cerrarSesionController.js"></script>
+<script src="/js/controller/loginController.js"></script>
+<script src="/js/controller/registrarController.js"></script>
+<script src="/js/controller/showController.js"></script>
+<script src="/js/controller/userController.js"></script>

@@ -34,8 +34,14 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
-
+  },
+  'GET /registrar': {
+    view: 'formulario_registro'
+  },
+  'GET /admin': {
+    view: 'viewadmin'
+  },
+  'POST /user': 'UserController.create'
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

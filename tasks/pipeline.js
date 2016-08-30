@@ -20,8 +20,8 @@ var tmpPath = '.tmp/public/';
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
     'styles/**/*.css',
-    '/bower_components/bootstrap/dist/css/bootstrap.min.css',
-    '/bower_components/bootstrap/dist/css/bootstrap-theme.min.css',
+    'bower_components/bootstrap/dist/css/bootstrap.min.css',
+    'bower_components/bootstrap/dist/css/bootstrap-theme.min.css',
 ];
 // Client-side javascript files to inject in order
 // (uses Grunt-style wildcard/glob/splat expressions)
@@ -30,19 +30,19 @@ var jsFilesToInject = [
   'js/dependencies/sails.io.js',
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
-    "/bower_components/lodash/dist/lodash.min.js",
-    "/bower_components/angular/angular.min.js",
-    "/bower_components/angular-simple-logger/dist/angular-simple-logger.min.js",
-    "/bower_components/angular-google-maps/dist/angular-google-maps.min.js",
-    "//maps.googleapis.com/maps/api/js?sensor=false",
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyCzfBhwFxsYaRjmaXWHsaVM03_aXRJ712g",
-    "/bower_components/angular-route/angular-route.min.js",
-    "/bower_components/jquery/dist/jquery.min.js",
-    "/bower_components/bootstrap/dist/js/bootstrap.min.js",
-    "/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js",
+  'bower_components/lodash/dist/lodash.min.js',
+  'bower_components/angular/angular.min.js',
+  'bower_components/angular-simple-logger/dist/angular-simple-logger.min.js',
+  'bower_components/angular-google-maps/dist/angular-google-maps.min.js',
+  '/maps.googleapis.com/maps/api/js?sensor=false',
+  'https://maps.googleapis.com/maps/api/js?key=AIzaSyCzfBhwFxsYaRjmaXWHsaVM03_aXRJ712g',
+  'bower_components/angular-route/angular-route.min.js',
+  'bower_components/jquery/dist/jquery.min.js',
+  'bower_components/bootstrap/dist/js/bootstrap.min.js',
+  'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/**/*.js'
+  // 'js/**/*.js'
 ];
 
 
